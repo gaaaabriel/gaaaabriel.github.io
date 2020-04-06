@@ -22,6 +22,10 @@ body a{
   color: #aaff00;
   text-decoration-color:#aaff00;
 }
+body a:hover{
+  color: grey;
+  text-decoration-color:grey;
+}
 body ::selection{
   background-color: #aaff00
   color: black
