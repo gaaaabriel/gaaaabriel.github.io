@@ -36,3 +36,4 @@ header{
   font-size: 2em
 }
 header{ font-weight: normal;}
+* {box-sizing:border-box}
