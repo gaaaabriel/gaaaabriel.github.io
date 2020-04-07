@@ -37,35 +37,4 @@ body {
       ou encore aller voir mon <a href="https://h-poutre.bandcamp.com">bandcamp</a> où je fait de la musique parfois<p>
         <br>
         <br>
-        <img name="slide" width="45%" height="30%" />
-        <script>
-        var i = 0; // Start Point
-var images = []; // Images Array
-var time = 5000; // Time Between Switch
-
-// Image List
-images[0] = "img/pega.jpg";
-images[1] = "img/pega5.jpg";
-images[2] = "img/pega3.jpg";
-images[3] = "img/pega4.jpg";
-
-// Change Image
-function changeImg() {
-  document.slide.src = images[i];
-
-  // Check If Index Is Under Max
-  if (i < images.length - 1) {
-    // Add 1 to Index
-    i++;
-  } else {
-    // Reset Back To O
-    i = 0;
-  }
-
-  // Run function every x seconds
-  setTimeout("changeImg()", time);
-}
-
-// Run function when page loads
-window.onload = changeImg;
-</script>
+        <img src="img/pega" alt="pega" width="30%">
