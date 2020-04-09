@@ -19,16 +19,16 @@ body {
 
 }
 body a{
-  color: #aaff00;
-  text-decoration-color:#aaff00;
+  color: #3c3c7e;
+  text-decoration-color: #3c3c7e;
 }
 body a:hover{
   color: grey;
   text-decoration-color:grey;
 }
 body ::selection{
-  background-color: #aaff00
-  color: black
+  background-color: #3c3c7e;
+  color: white;
 }
 header{
   font-family: meyrin;
