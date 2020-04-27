@@ -4,108 +4,75 @@
     <meta charset="UTF-8">
     <title>gabriel</title>
     <link rel="icon" type="image/jpg" href="img/icon2.jpg" />
-    <link href="styles2.css" rel="stylesheet" type="text/css">
     <script src="random.js"></script>
     <style media="screen">
-    ::selection{
-      background-color: #000;
-      color: white;
-    }
-    a::selection{
-      background-color: black;
-      color: white;
-      text-decoration-color: #0000;
-    }
     </style>
     <style>
-.dropbtn {
-  background-color: white;
-  color: black;
-  padding: 0;
-  border: none;
-  text-decoration: underline dotted;
-  font-size: 1em
-}
-.dropdown {
-  }
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: transparent;
-  font-size: normal;
-  padding-left: 1em;
-  }
-
-.dropdown-content a {
-  color: black;
-  padding: 0;
-  text-decoration: underline dotted;
+    @font-face {
+        font-family: 'Arial';
+        font-weight: normal;
+        src: url('Arial.woff') format('woff');
+      }
+        @font-face {
+            font-family: 'Toren';
+            font-weight: normal;
+            src: url('Toren-Proportional.woff') format('woff');
+    }
+    @font-face {
+        font-family: 'Toren';
+        font-style: italic;
+        src: url('Toren-rotalic.woff') format('woff');
 }
 
-.dropdown-content a:hover {
-  text-decoration: underline;
-  color: black;
-  background-color: white;
-}
+    body {
+      padding: 0.5em
+    }
+    body {
+      font-family: Toren;
+      color: black;
+      font-size: 3em;
+      padding-top:  0;
+      line-height: 1.5em;
+     }
 
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {text-decoration: underline;}
-
-img{
-  padding-top: 1em;
-}
-
-</style>
+    body a{
+      color: black;
+      text-decoration-color: black;
+      text-decoration: none;
+    }
+    body a:hover{
+      color: black;
+      text-decoration-color: black;
+      text-decoration: none;
+      font-style: italic;
+    }
+    ::selection{
+      background-color: white;
+      color: white;
+      text-decoration-color: black;
+    }
+    .box {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+ .label {
+			display: block;
+			font-size: 16px;
+			padding-left: 25px;
+			line-height: 10%;
+			margin-top: 5px;
+		}
     </style>
-</head>
-<body>
-  Gabriel<br><br>
-  <div class="dropdown">
-  <button class="dropbtn">description</button>
-  <div class="dropdown-content">
-     i like making things, i'm not great at it however.
-  </div>
-</div>
-<br><br>
-
-<div class="dropdown">
-<button class="dropbtn">latest</button>
-<div class="dropdown-content">
-  <a href="on-est-la.html">on-est-là</a> (album)
-
-</div>
-</div>
-<br><br>
-
-<div class="dropdown">
-<button class="dropbtn">contact</button>
-<div class="dropdown-content">
-   <a href="mailto:contact.gabriel.feldman@gmail.com">email</a>
-</div>
-</div>
-<br><br>
-
-<div class="dropdown">
-<button class="dropbtn">social</button>
-<div class="dropdown-content">
-  <a href="https://www.twitter.com/ordinateursympa">twitter</a>
-  <a href="https://www.instagram.com/gabriel_3310">instagram</a>
-  <a href="https://gabriel3310.bandcamp.com">bandcamp</a>
-  <a href="https://myspace.windows93.net/index.php?id=5931">myspace</a>
-</div>
-</div>
-<br><br>
-
-<div class="dropdown">
-<button class="dropbtn">portfolio</button>
-<div class="dropdown-content">
-  <a href="portfolio.pdf">
-<img border="0" alt="W3Schools" src="pdf-icon.png" width="100" >
-</div>
-</div>
+  </head>
+  <body>
+    gabriel <a href="on-est-la.html">album</a> <a href="mailto:contact.gabriel.feldman@gmail.com">email</a>
+    <a href="https://www.twitter.com/ordinateursympa">twitter</a><br><a href="https://www.instagram.com/gabriel_3310">instagram</a>
+    <a href="https://myspace.windows93.net/index.php?id=5931">myspace</a> <a href="https://gabriel3310.bandcamp.com">band<br>camp</a>
+    <a href="https://gabriel-feldman.net">cargo</a>
 
 
-</body>
-</html>
+<div class="pdf">
+  <br><a href="portfolio.pdf">
+<img border="0" src="pdf-icon.png" width="100"/><br><span class="label box">portfolio</span></a>
+</div>
