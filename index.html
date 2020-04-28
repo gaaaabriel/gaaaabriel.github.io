@@ -64,12 +64,29 @@
 			margin-top: 5px;
 		}
     </style>
+    <script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
   </head>
-  <body>
+  <body onload="startTime()">
     gabriel <a href="on-est-la.html">album</a> <a href="mailto:contact.gabriel.feldman@gmail.com">email</a>
     <a href="https://www.twitter.com/ordinateursympa">twitter</a><br><a href="https://www.instagram.com/gabriel_3310">instagram</a>
     <a href="https://myspace.windows93.net/index.php?id=5931">myspace</a> <a href="https://gabriel3310.bandcamp.com">band<br>camp</a>
-    <a href="https://gabriel-feldman.net">cargo</a>
+    <a href="https://gabriel-feldman.net">cargo</a> <span id="txt"></span>
 
 
 <div class="pdf">
