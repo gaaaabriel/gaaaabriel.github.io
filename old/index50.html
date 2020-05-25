@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>gabriel</title>
+    <link rel="icon" type="image/png" href="img/boi.png" />
+    <script src="random.js"></script>
+    <style media="screen">
+    </style>
+    <style>
+      @font-face {
+font-family: 'babacar';
+src: url('babacar/fonts/babacar.eot'); /* IE9 Compat Modes */
+src: url('babacar/fonts/babacar.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('babacar/fonts/babacar.woff2') format('woff2'), /* Super Modern Browsers */
+     url('babacar/fonts/babacar.woff') format('woff'), /* Pretty Modern Browsers */
+     url('babacar/fonts/babacar.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('babacar/fonts/babacar.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+        @font-face {
+            font-family: 'Toren';
+            font-weight: normal;
+            src: url('Toren-Proportional.woff') format('woff');
+    }
+    @font-face {
+        font-family: 'Toren';
+        font-style: italic;
+        src: url('Toren-Rotalicc.woff') format('woff');
+}
+
+    body {
+      padding: 0.5em
+    }
+    body {
+      font-family: babacar;
+      color: black;
+      font-size: 3em;
+      padding-top:  0;
+      line-height: 1.5em;
+      padding-bottom: 0;
+      cursor: url(pointer.png) 4 12, pointer;
+     }
+
+    body a{
+      color: black;
+      text-decoration-color: black;
+      text-decoration: none;
+      padding-bottom: 0;
+    }
+    body a:hover{
+      color: black;
+      text-decoration-color: black;
+      text-decoration: none;
+      font-style: italic;
+    }
+    ::selection{
+      background-color: white;
+      color: white;
+      text-decoration-color: black;
+    }
+    .box {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+ .label {
+			display: block;
+			font-size: 16px;
+			padding-left: 25px;
+			line-height: 10%;
+			margin-top: 5px;
+		}
+    .column {
+  float: left;
+  width: 30%;
+}
+.column2 {
+  float: left;
+  width: 70%;
+}
+
+    </style>
+    <script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+  </head>
+  <body>
+    <div class="row">
+    <div class="column">
+    <span>gabriel <a href="mailto:contact.gabriel.feldman@gmail.com">email</a> <a href="index4.html">old</a></span><span id="txt"></span><br>
+    <iframe style="border: 0; width: 170px; height: 170px;" src="https://bandcamp.com/EmbeddedPlayer/album=3392332348/size=large/bgcol=333333/linkcol=ffffff/minimal=true/transparent=true/" seamless><a href="http://gabriel3310.bandcamp.com/album/yo">yo; by gabriel 3310</a></iframe>
+     <iframe style="border: 0; width: 170px; height: 170px;" src="https://bandcamp.com/EmbeddedPlayer/album=37808977/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/" seamless><a href="http://gabriel3310.bandcamp.com/album/on-est-l">on-est-là by gabriel 3310</a></iframe>
+     <br>
+    <a class="twitter-timeline" data-width="345" data-height="340" data-theme="dark" href="https://twitter.com/ordinateursympa?ref_src=twsrc%5Etfw">Tweets by ordinateursympa</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+ <div class="column2">
+  <blockquote></blockquote>
+  </div>
+</div>
