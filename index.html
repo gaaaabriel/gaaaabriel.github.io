@@ -14,11 +14,23 @@
     font-weight: normal;
     src: url('credible.woff') format('woff');
   }
+  @font-face {
+    font-family: 'apple';
+    font-weight: normal;
+    src: url('AppleGaramondChanceryCaps-Regular.woff') format('woff');
+  }
 
 body{
   color: #aaaaaa;
   text-shadow: #aaaaaa 0px 0 5px;
   background-color: white;
+  font-family: apple;
+  font-size: 1.125em;
+}
+body::selection {
+  background-color: grey;
+  font:color: white;
+  text-shadow: #aaaaaa 0px 0 5px;
 }
 
 a {
@@ -35,7 +47,7 @@ a:hover{
     width: 20%
   }
 
-  @media  (max-width: 600px) {
+  @media  (orientation: portrait) {
 
     div.textbox {
       width: 100%
@@ -47,6 +59,7 @@ a:hover{
 </head>
 <body>
   <div class="textbox"><p>
+    <img src="img.jpg" width="100%"><br><br>
        hi im gabriel my main hobby is tweeting about things i like.<br>
        i also do music and graphic design<br><br>
 
