@@ -3,16 +3,12 @@
     <meta charset="UTF-8">
     <title>gabriel</title>
     <link rel="icon" type="image/gif" href="icon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
     <style>
   @font-face {
-    font-family: 'times';
+    font-family: 'apple';
     font-weight: normal;
-    src: url('times new roman ps.woff') format('woff');
-  }
-  @font-face {
-    font-family: 'credible';
-    font-weight: normal;
-    src: url('credible.woff') format('woff');
+    src: url('AppleGaramondChanceryCaps-Regular.woff') format('woff');
   }
   @font-face {
     font-family: 'apple';
@@ -20,12 +16,14 @@
     src: url('AppleGaramondChanceryCaps-Regular.woff') format('woff');
   }
 
+
 body{
-  color: #aaaaaa;
+  color: black;
   text-shadow: #aaaaaa 0px 0 5px;
   background-color: white;
-  font-family: apple;
+  font-family: 'Goudy Bookletter 1911', serif;
   font-size: 1.125em;
+  overflow: hidden;
 }
 body::selection {
   background-color: grey;
@@ -35,31 +33,56 @@ body::selection {
 
 a {
   text-shadow: #6c9bc7 0px 0 10px;
-  color: #aaaaaa;
+  color: #333333;
   text-decoration: none;
 }
 
 a:hover{
   text-shadow: #00F 0px 0 10px;
+  color: #000000;
 }
 
   div.textbox {
-    width: 20%
+    width: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow-y: scroll;
+    border-radius: 25px;
+    height: 75%;
+    box-shadow: #aaaaaa 0px 0 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   @media  (orientation: portrait) {
 
     div.textbox {
-      width: 100%
+      width: 75%;
+      height: 75%;
+      position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
     }
 
   }
+
+  ::-webkit-scrollbar {
+  width: 0px;
+}
+header{
+  font-family: apple;
+  font-size: 5em;
+  line-height: 0.5em;
+}
 
   </style>
 </head>
 <body>
   <div class="textbox"><p>
-    <img src="img.jpg" width="100%"><br><br>
+      <header>Gabriel-<br>Feldman<br>.Net</header><br>
        hi im gabriel my main hobby is tweeting about things i like.<br>
        i also do music and graphic design<br><br>
 
@@ -76,6 +99,7 @@ a:hover{
        &nbsp;&nbsp;&nbsp;&nbsp;music:<br>
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://simcard.bandcamp.com/">bandcamp</a><br>
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://soundcloud.com/simc4rd">soundcloud</a><br>
-       <a href="mailto:contact.gabriel.feldman@gmail.com">email</a><br>
+       <a href="mailto:contact.gabriel.feldman@gmail.com">email</a><br><br><br>
+       thanks 4 visiting! i appreciate it.
        </p>
   </div>
