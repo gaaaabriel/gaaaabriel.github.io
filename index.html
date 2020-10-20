@@ -5,113 +5,84 @@
     <link rel="icon" type="image/gif" href="icon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
     <style>
-  @font-face {
-    font-family: 'apple';
-    font-weight: normal;
-    src: url('AppleGaramondChanceryCaps-Regular.woff') format('woff');
-  }
-  @font-face {
-    font-family: 'apple';
-    font-weight: normal;
-    src: url('AppleGaramondChanceryCaps-Regular.woff') format('woff');
-  }
-  @font-face {
-    font-family: 'suisse';
-    font-weight: normal;
-    src: url('SuisseIntl-Book-WebXL.woff') format('woff');
-  }
+     @font-face {
+       font-family: 'liberation';
+       font-weight: normal;
+       font-style: normal;
+       src: url('LiberationSans-Regular-webfont.woff') format('woff');
+     }
+     @font-face {
+       font-family: 'suisse';
+       font-weight: normal;
+       src: url('SuisseIntl-Book-WebXL.woff') format('woff');
+     }
 
-
-body{
-  color: black;
-  text-shadow: #aaaaaa 0px 0 5px;
-  background-color: white;
-  font-family: 'Goudy Bookletter 1911', serif;
-  font-size: 1.125em;
-  overflow: hidden;
-}
-body::selection {
-  background-color: grey;
-  font:color: white;
-  text-shadow: #aaaaaa 0px 0 5px;
+header{
+  font-family: "suisse";
+  font-size: 2em;
+  letter-spacing: -0.075em;
+  line-height: 0.80;
+  padding-top: 3;
+  padding-bottom: 0;
+  padding-left: -2;
 }
 
-a {
-  text-shadow: #6c9bc7 0px 0 5px;
-  color: #333333;
-  text-decoration: none;
+img{
+  line-height: 0em;
+}
+
+a{
+  color: blue;
+  text-decoration: underline dotted;
 }
 
 a:hover{
-  text-shadow: #00F 0px 0 10px;
-  color: #000000;
+  color: blue;
+  text-decoration: underline wavy;
+  font-style: italic;
 }
 
-  div.textbox {
-    width: 28%;
-    box-sizing: border-box;
-    padding: 10px;
-    overflow-y: scroll;
-    border-radius: 0px;
-    height: 75%;
-    box-shadow: #aaaaaa 0px 0 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  @media  (orientation: portrait) {
-
-    div.textbox {
-      width: 75%;
-      height: 75%;
-      position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-    }
-
-  }
-
-  ::-webkit-scrollbar {
-  width: 0px;
-}
-header{
-  font-family: 'suisse';
-  font-size: 5em;
-  line-height: 0.75em;
+body{
+  font-family: "liberation";
+  font-size: 1.125em;
   letter-spacing: -0.075em;
-  text-shadow: none;
-  padding-left: -0.5em;
+  line-height: 1em;
+  padding-left: 1;
+}
+p{
+  padding-left: 3;
+  margin-top: 1;
 }
 
-  </style>
+div.box{
+  width: 35%;
+}
+
+@media  (orientation: portrait) {
+
+  div.box {
+    width: 100%;
+  }
+}
+</style>
 </head>
 <body>
-  <div class="textbox"><p>
-      <header>Gabriel-<br>Feldman.<br>Net</header><br>
-       hi im gabriel my main hobby is tweeting about things i like.<br>
-       i also do music and graphic design<br><br>
+  <div class="box" contenteditable="true">
+    <img src="discord.jpg" width="100%">
+    <header>Gabriel Feldman</header>
+    <p>hello i'm gabriel<br>i like music and graphic design<br>
+    i also like doing <a href="photo" contenteditable="false">photography</a> sometimes<br><br>
 
-       PROJECTS:<br>
-       &nbsp;&nbsp;&nbsp;&nbsp;graphics:<br>
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/gabriel">gabriel collection</a><br>
-       &nbsp;&nbsp;&nbsp;&nbsp;photography:<br>
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/photo">gabriel_starter_pack</a><br><br>
+    you can mainly find me on <a href="https://twitter.com/pixiediscs" contenteditable="false">twitter</a><br>
+    i also have <a href="https://myspace.windows93.net/index.php?id=5931" contenteditable="false">myspace</a><br>
+    & music at <a href="https://simcard.bandcamp.com" contenteditable="false">bandcamp</a> and
+    <a href="https://soundcloud.com/simc4rd" contenteditable="false">soundcloud</a><br><br>
 
-       LINKS:<br>
-       &nbsp;&nbsp;&nbsp;&nbsp;socials:<br>
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/ordinateursympa">twitter</a><br>
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://myspace.windows93.net/index.php?id=5931">myspace93</a><br>
-       &nbsp;&nbsp;&nbsp;&nbsp;music:<br>
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://simcard.bandcamp.com/">bandcamp</a><br>
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://soundcloud.com/simc4rd">soundcloud</a><br>
-       <a href="mailto:contact.gabriel.feldman@gmail.com">email</a><br><br><br>
-     </p><br>
-     <!-- hitwebcounter Code START -->
- <a href="https://www.hitwebcounter.com" target="_blank">
- <img src="https://hitwebcounter.com/counter/counter.php?page=7688551&style=0005&nbdigits=5&type=ip&initCount=0" title="Total Website Hits" Alt="Web Hits"   border="0" /></a><br>
-                                    thanks 4 visiting! i appreciate it.
-
+    don't hesitate to contact me for anything!<br> you can use my <a href="mailto:contact.gabriel.feldman@gmail.com" contenteditable="false">email</a> or twitter dms<br><br>
+    <!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=7688551&style=0005&nbdigits=5&type=ip&initCount=0" title="Total Website Hits" Alt="Web Hits"   border="0" /></a>
+thanks 4 visiting! i appreciate it.</p>
   </div>
+
+</body>
