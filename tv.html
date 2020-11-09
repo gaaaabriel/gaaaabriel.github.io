@@ -14,7 +14,7 @@
      @font-face {
        font-family: 'SuisseIntl';
        font-weight: normal;
-       src: url('SuisseIntl-Book-WebXL.woff') format('woff');
+       src: url('SuisseIntl-Book-WebM.woff') format('woff');
      }
 
 img{
@@ -70,7 +70,7 @@ div.box2{
 }
 
 div.box{
-  width: 45%;
+  width: 50%;
   float: left;
   padding: 5;
   overflow-y: scroll;
@@ -86,6 +86,16 @@ div{
   width: 45%;
 }
 
+div.svg{
+  position:absolute;
+  z-index:10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+
+}
 @media (orientation: portrait) {
 
   div.box {
@@ -165,11 +175,14 @@ div{
                    "i like grapes",
                    "banger phrases right here",
                    "imagine a good website",
-                   "^im so popular now",
+                   "IM POPULAR NOW!",
                    "\"Teenage Cloud\": A Thesis On The Post-Internet State Of The Arts, By gabriel1",
                    "The Hidden Beauty of the Sub-Urban Neighbourhood: A Thesis by gabriel1",
                    "y'all right twix or left twix",
-                   "really struggling not to put a bunch of quotes from songs i love here",
+                   "really struggling not to put a bunch of quotes from songs i love here (already kinda did)",
+                   "it feels so comforting to have an anime profile pic",
+                   "listening to neil's \"furries\" and questioning myself",
+                   "🎵idk wtf i wanna feel🎵",
                  ];
                  var Pick = Math.floor(Math.random() * (Joke.length));
                  document.write(Joke[Pick]);
@@ -178,12 +191,11 @@ div{
                document.addEventListener("load", ShowJoke());
                </script>
                      </p>
-      </div>
+</div>
 <div class="box2">
 <header>
   <a href="https://twitter.com/pixiediscs">twitter</a> <a href="https://myspace.windows93.net/index.php?id=5931">myspace93</a> <a href="mailto:contact.gabriel.feldman@gmail.com">email</a>
-  <a href="simcard.bandcamp.com">music</a> <a href="photo">.net(2020)</a>
+  <a href="simcard.bandcamp.com">music</a> <a href="photo">.net(2020)</a><a href="dcmi">dcmi(2020)</a>
 </header>
   </div>
-
 </body>
