@@ -1,0 +1,50 @@
+<head>
+<title>sms</title>
+<link rel="icon" type="image/svg" href="gabriel11.svg">
+<style>
+  @font-face {
+    font-family: 'SuisseIntl';
+    font-weight: normal;
+    src: url('SuisseIntl-Book-WebM.woff') format('woff');
+  }
+body{
+  font-family: "SuisseIntl";
+  font-size: 2em;
+  line-height: 10px;
+  padding: 10;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: #E6E6E6;
+}
+h1{
+  font-size: 0.5em;
+}
+.phone{
+  display: none;
+}
+.desktop{
+  display: inline;
+}
+@media (max-device-width: 480px){
+  .desktop{
+    display: none;
+  }
+  .phone{
+    display: inline;
+  }
+}
+</style>
+  </head>
+<body>
+  <div class="phone">
+    <a href="sms://+3307666135677?body=hi%gabriel">call me maybe?
+    <h1>(standard text message rates to france apply)</h1></a>
+  </div>
+  <div class="desktop">
+    <h1>please use a phone for this page</h1>
+  </div>
+</body>

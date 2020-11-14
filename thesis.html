@@ -16,18 +16,24 @@ font-family: 'apple';
 }
 
 @font-face {
-font-family: 'pararubber';
+font-family: 'palatino';
   font-weight: normal;
-  src: url('ParaRubber-Medium.woff') format('woff');
+  src: url('palatino.woff') format('woff');
 }
 
 div.feuille{
-width: 420px; /***:sunglasses:***/
-height: 594px;
+width: 378px;
+height: 534.6px;
 background-color: white;
 margin: auto;
 margin-top: 30;
-box-shadow: 0px 0px 20px black;
+box-shadow: 0px 0px 20px grey;
+overflow: scroll;
+
+}
+
+.feuille::-webkit-scrollbar {
+  display: none;
 }
 div.half{
   width: 50%;
@@ -39,12 +45,14 @@ div.half{
   float: left;
 }
 h1{
-  font-size: 5em;
+  font-size: 4em;
   font-family: 'hobo';
   margin: 5;
   padding-left: 5;
   letter-spacing: -5px;
-  margin-bottom: 0;
+  margin-bottom: 5;
+  line-height: 55px;
+  text-align: center;
 }
 h2{
   font-size: 3em;
@@ -60,29 +68,48 @@ h3{
   margin-top: 2em;
   margin-left: 10;
   line-height: 10px;
+  margin-top: 10;
   text-decoration: underline;
 }
 h4{
   font-size: 0.75em;
-  font-family: 'pararubber';
+  font-family: 'palatino';
   margin-top: -10;
   margin-left: 20;
+  margin-right: 20
 }
 
 body{
-  background-color: #555555;
+  background-color: #111111;
+}
+
+@media print  {
+ div.feuille{
+   width: 100%;
+   height: 100%;
+   box-shadow: none;
+ }
+
+div.half{
+  height: 100%;
+  width: 100%;
+}
 }
 </style>
 </head>
 <body>
   <div class="half">
   <div class="feuille">
-    <h1>100 gecs ep</h1>
+    <h1>understanding the 100 gecs ep</h1>
     <h2>Part 1: Practical Song Analysis</h2>
   </div>
   <div class="feuille">
-  <h3><br>Introduction:</h3>
-  <h4>This Part of the Thesis will be focused on analysing every song from the ep on a 5 point basis:<br>
+  <h3>Introduction:</h3>
+  <h4>I love this ep. It’s in my top 5 musical projects of the moment and i truly don’t know why.
+    it fills me with an energy that i can’t explain,  a feeling that nothing else makes me feel.
+     i don’t have to understand it to appreciate it but i’m still going to try to find out what this
+     ep does to make me love it so much<br><br>
+     This Part of the Thesis will be focused on analysing every song from the ep on a 5 point basis:<br>
     -Melody<br>
     -Percussions / Other Instrumental Elements<bR>
     -Sound Design<br>
