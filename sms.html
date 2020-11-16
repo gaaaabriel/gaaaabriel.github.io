@@ -29,20 +29,32 @@ h1{
 .desktop{
   display: inline;
 }
+.square{
+  width: 100%;
+  background-color: #bfbfbf;
+  padding: 10;
+  border-radius: 10px;
+  
+}
 @media (max-device-width: 480px){
   .desktop{
     display: none;
   }
   .phone{
-    display: inline;
+    display: contents;
   }
 }
 </style>
   </head>
 <body>
   <div class="phone">
-    <a href="sms://+330766135677">call me maybe?
-    <h1>(standard text message rates to france apply)</h1></a>
+    <a href="sms://+330766135677">
+      <div class="square">call me maybe?
+    <h1>
+      (standard text message rates to france apply)
+    </h1>
+  </div>
+</a>
   </div>
   <div class="desktop">
     <h1><font style="color:white;background-color:black;">please use a phone for this page</font></h1>
