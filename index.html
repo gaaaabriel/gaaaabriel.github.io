@@ -31,6 +31,17 @@ a:hover{
   text-decoration: underline;
   cursor: alias;
 }
+a:hover#social{
+  cursor: alias;
+  text-decoration: underline;
+  color: #6B94DE;
+
+}
+a:hover#project{
+  cursor: alias;
+  text-decoration: underline;
+  color: #D3BAD0;
+}
 
 header{
   font-family: "SuisseIntl";
@@ -157,7 +168,7 @@ div.svg{
                    "i hope that when i die i get a whimsically typeset counter of how many times i cried",
                    "what's the point of dressing cool when i can where the same grey hoodie all the time like an npc",
                    "https://crouton.net is my spirit animal",
-                   "haven't seen the sun in a while",
+                   "being on the ocean, heading for a new country... with the wind in my hair, and the sun shining oh my gosh were did the sun go",
                    "ive been getting obsessive",
                    "everything is like uuuuh",
                    "who are you anyways",
@@ -225,7 +236,11 @@ div.svg{
                    "...",
                    "how do you do it",
                    "you know, everyone goes through this, at some point,, in their lives... y'know what I'm saying?",
-
+                   "i might have eaten soap",
+                   "on twitter i am website man on website i am twitter man tis is a symbiotic relationship",
+                   "going to find out where you live and take a picture of your house like it's american football's",
+                   "traumatized by a vsauce video",
+                   "pizza au poivre",
                  ];
                  var Pick = Math.floor(Math.random() * (Joke.length));
                  document.write(Joke[Pick]);
@@ -237,8 +252,15 @@ div.svg{
 </div>
 <div class="box2">
 <header>
-  <a href="bio.html">bio</a> <a href="https://twitter.com/dirtfolder">twitter</a> <a href="https://myspace.windows93.net/index.php?id=5931">myspace93</a> <a href="mailto:contact.gabriel.feldman@gmail.com">email</a>
-  <a href="sms.html">sms</a> <a href="https://simcard.bandcamp.com">music</a> <a href="gec">gec talk</a> <a href="photo">.net (2020)</a> <a href="dcmi">dcmi (2020)</a>
+  <a href="bio.html">bio</a>
+  <a id="social" href="https://twitter.com/dirtfolder">twitter</a>
+  <a id="social" href="https://myspace.windows93.net/index.php?id=5931">myspace93</a>
+  <a id="social" href="mailto:contact.gabriel.feldman@gmail.com">email</a>
+  <a id="social" href="sms.html">sms</a>
+  <a id="social" href="https://simcard.bandcamp.com">music</a>
+  <a id="project" href="gec">gec talk</a>
+  <a id="project" href="photo">.net (2020)</a>
+  <a id="project" href="dcmi">dcmi (2020)</a>
 </header>
   </div>
 </body>
