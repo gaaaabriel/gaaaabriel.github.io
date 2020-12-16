@@ -37,6 +37,10 @@
     div.all::-webkit-scrollbar{
       display: none;
     }
+
+    img#img{
+      height: 50%
+    }
     @media (max-width: 600px){
       div.all{
         height: 100%;
@@ -50,6 +54,12 @@
       }
       div.logo{
         background-color: white;
+      }
+    }
+
+    @media (max-device-width: 900px){
+      img#img{
+        height: 10%
       }
     }
     </style>
@@ -70,16 +80,16 @@
 
           <p>images:<p>
             <div class="gallery">
-              <img src="tc/011753/IMG_3885.jpg" height="50%">
-              <img src="tc/011753/image6.jfif" height="50%">
-              <img src="tc/011753/image0.jpg" height="50%">
-              <img src="tc/011753/image2.jpg" height="50%">
-              <img src="tc/011753/image2.jpg" height="30%" style="transform:skew(20deg, 30deg)translate(-20%, -30%);">
-              <img src="tc/011753/image1.jpg" height="50%">
-              <img src="tc/011753/image2.jfif" height="50%">
-              <img src="tc/011753/image4.jpg" height="50%">
-              <img src="tc/011753/image3.jfif" height="50%">
-               <img src="tc/011753/image5.jpg" height="50%">
+              <img src="tc/011753/IMG_3885.jpg" id="img">
+              <img src="tc/011753/image6.jfif" id="img">
+              <img src="tc/011753/image0.jpg" id="img">
+              <img src="tc/011753/image2.jpg" id="img">
+              <img src="tc/011753/image2.jpg" height="5%" style="transform:skew(20deg, 30deg)translate(-20%, -30%);">
+              <img src="tc/011753/image1.jpg" id="img">
+              <img src="tc/011753/image2.jfif" id="img">
+              <img src="tc/011753/image4.jpg" id="img">
+              <img src="tc/011753/image3.jfif" id="img">
+               <img src="tc/011753/image5.jpg" id="img">
             </div>
 
           <p>scans:<p>
