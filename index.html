@@ -107,6 +107,18 @@ div.svg{
   width: 100%;
 
 }
+
+.popuptext h1{
+  font-size: 1.5em;
+  margin-top: 0px;
+}
+.popuptext h2{
+  font-size: 0.8em;
+  margin-top: -15px;
+  font-weight: normal;
+  line-height: 1;
+}
+
 @media (orientation: portrait) {
 
   div.box {
@@ -135,6 +147,50 @@ div.svg{
     font-size: 1.5em;
   }
 
+  .popuptext h1{
+    font-size: 1.5em;
+    margin-top: 5px;
+  }
+  .popuptext h2{
+    font-size: 0.8em;
+    margin-top: -20px;
+    font-weight: normal;
+    line-height: 1;
+  }
+
+  }
+
+  /* Popup container - can be anything you want */
+  .popup {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+  .popup:hover {
+    text-decoration-style: solid;
+    text-decoration-color: black;
+  }
+
+
+  /* The actual popup */
+  .popuptext {
+    visibility: hidden;
+    width: 50%;
+    height: 70%;
+    background-color: white;
+    color: #000000;
+    padding: 5px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: auto;
+    border: 1px solid;
+  }
+  /* Toggle this class - hide and show the popup */
+  div#mypopup.popuptext.show {
+      visibility: visible;
   }
 
   /* Start https://www.cursors-4u.com */
@@ -158,6 +214,7 @@ div.svg{
        document.head.appendChild(fhs);document.write("<span id='o_"+fhs_id+"'></span>");
 
        </script>
+
        <script type="text/javascript">
 // <![CDATA[
 var colour="#a9efff";
@@ -418,7 +475,7 @@ function createDiv(height, width) {
                    "going to find out where you live and take a picture of your house like it's american football's",
                    "traumatized by a vsauce video",
                    "pizza au poivre",
-                   "looking for someone that can discretely mail me catboy ears",
+                   "looking for maid dress smugglers",
                    "rain is pretty crazy if you think abt it. like. piss droplets hit the fckin earth",
 
                  ];
@@ -432,6 +489,7 @@ function createDiv(height, width) {
 </div>
 <div class="box2">
 <header>
+  <span class="popup" onclick="myFunction()">news</span>
   <a href="bio.html">bio</a>
   <a id="social" href="https://twitter.com/dirtfolder">twitter</a>
   <a id="social" href="https://myspace.windows93.net/index.php?id=5931">myspace93</a>
@@ -442,6 +500,19 @@ function createDiv(height, width) {
   <a id="project" href="gec">gec talk</a>
   <a id="project" href="photo">.net (2020)</a>
   <a id="project" href="dcmi">dcmi (2020)</a>
-</header>
+  </header>
   </div>
+  <div class="popuptext" id="myPopup"  onclick="myFunction()">
+      <h1>03/01/21: Added News<br><h1>
+      <h2>i thought this would be a good way to track the evolution of the website. i'll leave an update every once in a while if
+          im not lazy. the code is a pure bodge idk how it works
+    </div>
+
+  <script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
 </body>
