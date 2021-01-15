@@ -44,15 +44,43 @@ h2{
 	margin-top: 12.5px;
 	margin-bottom: 12.5px;
 }
+
+.link{
+	position: absolute;
+	bottom: 10;
+	right: 10;
+	text-align: right;
+	font-size: 12px;
+}
+.link a{
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: black;
+}
+
+.link a:hover{
+	color: rgba(0, 0, 0, 0.5);
+	text-decoration: underline;
+	text-decoration-color: rgba(0, 0, 0, 0.5);
+}
+
 img{
 	margin: 10;
 	margin-left: 0;
 	margin-top: 7.5;
 	margin-bottom: 2.5;
 }
+
+@media (orientation: portrait) {
+	.container{
+		box-shadow: 5px 5px 2px black;
+	}
+
+}
 </style>
 </head>
 <body>
+<meta name="viewport" content="width=device-width, initial-scale=0.8,"/>
 	<div class="container">
 
 		<div class="entry">
@@ -90,6 +118,23 @@ img{
 			<h2>15/01/21/00:58:09</h2> zoned out
 		</div>
 
+		<div class="entry">
+			<h2>15/01/21/09:07:45</h2> somebody loves me
+		</div>
 
+		<div class="entry">
+			<h2>15/01/21/11:58:48</h2> wonder what i am going to learn <a href="https://pbs.twimg.com/media/ErxI7GNW4AAWXWt?format=jpg&name=900x900"
+			  target="popup" onclick="window.open('https://pbs.twimg.com/media/ErxI7GNW4AAWXWt?format=jpg&name=900x900','popup','width=400,height=300'); return false;">2day</a>
+		</div>
+
+
+</div>
+
+
+
+<div class="link">
+	<a href="journal.html">
+	sort newest
+</a>
 </div>
 </body>
