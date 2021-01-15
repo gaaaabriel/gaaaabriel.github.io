@@ -120,6 +120,23 @@ div.svg{
   line-height: 1;
 }
 
+/* The actual popup */
+.popuptext {
+  visibility: hidden;
+  width: 50%;
+  height: 70%;
+  background-color: white;
+  color: #000000;
+  padding: 5px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: auto;
+  border: 1px solid;
+}
+
 @media (orientation: portrait) {
 
   div.box {
@@ -153,6 +170,11 @@ div.svg{
     margin-top: 5px;
     line-height: 0.80
   }
+
+  .popuptext{
+    width: 75%;
+    height: 70%
+  }
   .popuptext h2{
     font-size: 0.8em;
     margin-top: -20px;
@@ -174,22 +196,6 @@ div.svg{
   }
 
 
-  /* The actual popup */
-  .popuptext {
-    visibility: hidden;
-    width: 50%;
-    height: 70%;
-    background-color: white;
-    color: #000000;
-    padding: 5px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: auto;
-    border: 1px solid;
-  }
   /* Toggle this class - hide and show the popup */
   div#mypopup.popuptext.show {
       visibility: visible;
@@ -479,6 +485,7 @@ function createDiv(height, width) {
                    "pizza au poivre",
                    "looking for maid dress smugglers",
                    "rain is pretty crazy if you think abt it. like. piss droplets hit the fckin earth",
+                   "konata nation rise tf up",
 
                  ];
                  var Pick = Math.floor(Math.random() * (Joke.length));
