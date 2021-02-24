@@ -2,18 +2,38 @@
   <title>bio</title>
   <link rel="icon" type="image/svg" href="gabriel11.svg" />
   <style media="screen">
-    <style>
+    @font-face {
+      font-family: 'helvetica';
+      font-weight: bold;
+      font-style: normal;
+      src: url('helvetica-bold.woff') format('woff');
+    }
+    body{
+      text-align: center;
+      font-family: 'helvetica';
+      font-weight: bold;
+      font-size: 4em;
+      line-height: 0.90;
+
+    }
+    ::selection{
+      background-color: transparent;
+      color: red;
+    }
+    p{
+      margin-bottom: 0px;
+    }
 .countup {
   text-align: center;
   margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 0.4em;
 }
 .countup .timeel {
-  background: black;
-  color: white;
+  color: black;
 }
 .countup span[class*="timeRef"] {
-  background: black;
-  color: white;
+  color: black;
 }
 </style>
   <script type="text/javascript">
@@ -49,20 +69,14 @@ function countUpFromTime(countFrom, id) {
   countUpFromTime.interval = setTimeout(function(){ countUpFromTime(countFrom, id); }, 1000);
 }
 </script>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=0.5,"/>
+<p>BORN TO DIE<br>
+<span style="font-size:0.7em;">WORLD IS A FUCK</span><br>
+<span style="font-size:0.5em;letter-spacing:1.5;">折部 Kill Me Baby 2008<br></span>
+<span style="font-size:0.5em;letter-spacing:-1;">I Am Twitter Account</span></p>
 
-<body bgcolor=black>
-</body>
-<meta name="viewport" content="width=device-width, initial-scale=0.8,"/>
-<font style="font-family:times;font-size:28px;">
-<font color="white">the whole universe was in a hot, dense, state, than nearly</font>
 <div class="countup" id="countup1">
-  <span class="timeel days">00</span>
-  <span class="timeel timeRefDays">days</span>
-  <span class="timeel hours">00</span>
-  <span class="timeel timeRefHours">hours</span>
-  <span class="timeel minutes">00</span>
-  <span class="timeel timeRefMinutes">minutes</span>
-  <span class="timeel seconds">00</span>
-  <span class="timeel timeRefSeconds">seconds</span>
+  <span class="timeel days">00</span><span class="timeel timeRefDays">DAYS</span><span class="timeel hours">00</span><span class="timeel timeRefHours">HOURS</span><span class="timeel minutes">00</span><br><span class="timeel timeRefMinutes">MINUTES</span><span class="timeel seconds">00</span><span class="timeel timeRefSeconds">SECONDS</span> OF SHIT
 </div>
-<font color="white">expansion started,-wait-</font>
+</body>
