@@ -1,0 +1,97 @@
+<html>
+<head>
+	<title>thank you!</title>
+<style>
+body {
+	font-family: "ＭＳ ゴシック", "Osaka－等幅", "Hiragino Sans";
+	font-size:10px;
+	margin:5;
+	text-align:left;
+	color: #ff0000;
+}
+::selection{
+	background-color: #ff0000;
+	color: #ffffff;
+	text-decoration-color: #ffffff;
+}
+a:hover{
+	color: rgba(255, 0, 0, 0.5);
+	text-decoration: underline;
+	text-decoration-color: rgba(255, 0, 0, 0.5);
+}
+a{
+	color: inherit;
+	text-decoration: underline;
+	text-decoration-color: inherit;
+}
+h2{
+	font-size:10px;
+	text-align:left;
+	color: #ff0000;
+	font-weight: normal;
+	display: inline;
+}
+
+.container{
+	width: 300px;
+	height: 225px;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+	                  url("snowy.jpg");
+										background-repeat: round;
+									  background-size: 300px 250px;
+	margin: 20px;
+	padding: 5;
+	padding-left: 10;
+	overflow-y: scroll;
+	resize: both;
+
+}
+.entry{
+	margin-top: 12.5px;
+	margin-bottom: 12.5px;
+}
+
+.link{
+	position: absolute;
+	bottom: 10;
+	right: 10;
+	text-align: right;
+	font-size: 12px;
+}
+.link a{
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: black;
+}
+
+.link a:hover{
+	color: rgba(0, 0, 0, 0.5);
+	text-decoration: underline;
+	text-decoration-color: rgba(0, 0, 0, 0.5);
+}
+video,
+img{
+	margin: 10;
+	margin-left: 0;
+	margin-top: 7.5;
+	margin-bottom: 2.5;
+}
+
+@media (orientation: portrait) {
+	.container{
+		box-shadow: 5px 5px 2px black;
+	}
+	h2,
+	body,
+	.link{
+		font-size: 7.5px;
+	}
+
+}
+</style>
+</head>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=0.8,"/>
+	<div class="container">
+		<img src="placeholder.png" height="200px">
+	</div>
