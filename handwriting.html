@@ -1,0 +1,81 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+<style>
+@font-face {
+  font-family: 'liberation';
+  font-weight: normal;
+  font-style: normal;
+  src: url('LiberationSans-Regular-webfont.woff')  format('woff');
+}
+p{
+  font-family: "liberation";
+  font-size: 1em;
+  margin-left: 20px;
+}
+img {
+  margin-left: 20px;
+  margin-top: 5px;
+  background: transparent url('https://seiga.nicovideo.jp/css/jquery/images/bx_loader.gif') center no-repeat;
+}
+
+label{
+  overflow: scroll;
+}
+.image{
+  width: 30%;
+  transform: rotate(0deg);
+}
+
+.controls{
+  margin-top: 5px;
+  margin-left: 20px;
+}
+</style>
+<script>
+function ImageCollection(images) {
+     this.images = images;
+     this.i = 0;
+     this.next = function(imgId) {
+     var img = document.getElementById(imgId);
+     this.i++;
+     if (this.i == images.length)
+         this.i = 0;
+         img.src = images[this.i];
+     }
+     this.prev = function(imgId) {
+     var img = document.getElementById(imgId);
+     this.i--;
+     if (this.i <= 0)
+         this.i = images.length -1;
+         img.src = images[this.i];
+     }
+ }
+
+var ic1 = new ImageCollection(
+    ['https://cdn.discordapp.com/attachments/804353858532147210/873870998116642826/Handwritten_2021-08-08_024303_1.jpg',
+     'https://cdn.discordapp.com/attachments/804353858532147210/873871017808920586/Handwritten_2021-08-08_024303_2.jpg',
+     'https://cdn.discordapp.com/attachments/804353858532147210/873871003426639932/Handwritten_2021-08-08_024303_3.jpg',
+     'https://cdn.discordapp.com/attachments/804353858532147210/873870951958339585/Handwritten_2021-08-08_024303_4.jpg',
+     'https://cdn.discordapp.com/attachments/804353858532147210/873871130367246346/Handwritten_2021-08-08_024303_5.jpg',
+     'https://cdn.discordapp.com/attachments/804353858532147210/873871132825100348/Handwritten_2021-08-08_024303_6.jpg',
+     'https://cdn.discordapp.com/attachments/804353858532147210/873871125199863858/Handwritten_2021-08-08_024303_7.jpg',
+     'https://cdn.discordapp.com/attachments/804353858532147210/873871133269721088/Handwritten_2021-08-08_024303_8.jpg',
+     'https://cdn.discordapp.com/attachments/804353858532147210/873871136641937428/Handwritten_2021-08-08_024303_9.jpg',
+     'https://media.discordapp.net/attachments/804353858532147210/873871138965585950/Handwritten_2021-08-08_024303_10.jpg'
+    ]
+);
+</script>
+</head>
+<body>
+<div class="image">
+
+<img id='container' src="https://cdn.discordapp.com/attachments/804353858532147210/873870056671571988/Handwritten_2021-08-08_024303.jpg" width=100%>
+
+</div>
+<div class="controls">
+<input type='button' value='prev' onclick='ic1.prev("container")' />
+<input type='button' value='next' onclick='ic1.next("container")' />
+</div>
+
+</html>
