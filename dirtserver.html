@@ -7,654 +7,679 @@
       font-style: normal;
       src: url('whitneybook.woff') format('woff');
     }
+
     @font-face {
       font-family: 'whitney';
       font-weight: bold;
       font-style: normal;
       src: url('whitneybold.woff') format('woff');
     }
+
     @font-face {
       font-family: 'whitney';
       font-weight: 500;
       font-style: normal;
       src: url('whitneysemibold.woff') format('woff');
     }
-    body{
+
+    body {
       margin: 0;
       background-Color: #36393f;
       overflow: hidden;
     }
 
 
-#style-1::-webkit-scrollbar-track
-{
-	border-radius: 7.5px;
-	background-color: #2e3338;
-}
-
-#style-1::-webkit-scrollbar
-{
-	width: 7.5px;
-	background-color: #36393f;
-  margin: 2.5px;
-}
-
-#style-1::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	background-color: #202225;
-}
-
-  .band{
-    height: 40px;
-    background-Color: #36393f;
-    padding: 5px;
-    margin: 0;
-    padding-top: 2.5px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 0px 2px black;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 900;
-  }
-  .title{
-    color: white;
-    margin-left: 5px;
-    font-family: 'whitney';
-    font-weight: bold;
-  }
-  .all{
-    position: relative;
-    margin-top: 52.5px;
-    margin-left: 5px;
-    overflow-y: scroll;
-    height: calc(100% - 57.5px);
-    width: calc(100% - 7.5px);
-  }
-  .pfp{
-    width: 45px;
-    display: inline-block;
-  }
-  .message{
-    display: inline-block;
-    vertical-align: top;
-  }
-
-  .hover-effect{
-    margin: 0px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    margin-left: -5px;
-    margin-right: 5px;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    overflow: hidden;
-  }
-  .hover-effect:hover{
-    background-Color: #32353b;
-  }
-  .message-sender{
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 2.5px;
-    font-family: 'whitney';
-    font-weight: 500;
-    letter-spacing: -0.5;
-    color: white;
-    font-size: 15px;
-    margin-bottom: 2.5px;
-  }
-
-  .content{
-    font-family: 'whitney';
-    font-weight: normal;
-    color: #DCDDDE;
-  }
-  a{
-    color: #00B0F4;
-    text-decoration: none;
-  }
-
-  a:hover{
-    text-decoration: underline;
-  }
-
-  span.time{
-    color: #72767d;
-    font-family: 'whitney';
-    font-size:10px;
-    vertical-align: bottom;
-    line-height: 20px;
-    margin-left: 7.5px;
-  }
-
-  @media (orientation: portrait){
-    img{
-      max-width: 90%;
+    #style-1::-webkit-scrollbar-track {
+      border-radius: 7.5px;
+      background-color: #2e3338;
     }
-  }
 
-</style>
+    #style-1::-webkit-scrollbar {
+      width: 7.5px;
+      background-color: #36393f;
+      margin: 2.5px;
+    }
+
+    #style-1::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #202225;
+    }
+
+    .band {
+      height: 40px;
+      background-Color: #36393f;
+      padding: 5px;
+      margin: 0;
+      padding-top: 2.5px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0px 0px 2px black;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 900;
+    }
+
+    .title {
+      color: white;
+      margin-left: 5px;
+      font-family: 'whitney';
+      font-weight: bold;
+    }
+
+    .all {
+      position: relative;
+      margin-top: 52.5px;
+      margin-left: 5px;
+      overflow-y: scroll;
+      height: calc(100% - 57.5px);
+      width: calc(100% - 7.5px);
+    }
+
+    .pfp {
+      width: 45px;
+      display: inline-block;
+    }
+
+    .message {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .hover-effect {
+      margin: 0px;
+      margin-bottom: 15px;
+      margin-top: 15px;
+      margin-left: -5px;
+      margin-right: 5px;
+      padding-left: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      overflow: hidden;
+    }
+
+    .hover-effect:hover {
+      background-Color: #32353b;
+    }
+
+    .message-sender {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 2.5px;
+      font-family: 'whitney';
+      font-weight: 500;
+      letter-spacing: -0.5;
+      color: white;
+      font-size: 15px;
+      margin-bottom: 2.5px;
+    }
+
+    .content {
+      font-family: 'whitney';
+      font-weight: normal;
+      color: #DCDDDE;
+    }
+
+    a {
+      color: #00B0F4;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    span.time {
+      color: #72767d;
+      font-family: 'whitney';
+      font-size: 10px;
+      vertical-align: bottom;
+      line-height: 20px;
+      margin-left: 7.5px;
+    }
+
+    @media (orientation: portrait) {
+      img {
+        max-width: 90%;
+      }
+    }
+  </style>
 </head>
 
 
 
 <body>
-  <meta name="viewport" content="width=device-width, initial-scale=0.65"/>
-<div class="band">
-  <svg width="24" height="44" viewBox="0 0 24 24" class="icon-22AiRD"><path fill="#72767d" d="M14 8C14 7.44772 13.5523 7 13 7H9.76001L10.3657 3.58738C10.4201 3.28107 10.1845 3 9.87344 3H8.88907C8.64664 3 8.43914 3.17391 8.39677 3.41262L7.76001 7H4.18011C3.93722 7 3.72946 7.17456 3.68759 7.41381L3.51259 8.41381C3.45905 8.71977 3.69449 9 4.00511 9H7.41001L6.35001 15H2.77011C2.52722 15 2.31946 15.1746 2.27759 15.4138L2.10259 16.4138C2.04905 16.7198 2.28449 17 2.59511 17H6.00001L5.39427 20.4126C5.3399 20.7189 5.57547 21 5.88657 21H6.87094C7.11337 21 7.32088 20.8261 7.36325 20.5874L8.00001 17H14L13.3943 20.4126C13.3399 20.7189 13.5755 21 13.8866 21H14.8709C15.1134 21 15.3209 20.8261 15.3632 20.5874L16 17H19.5799C19.8228 17 20.0306 16.8254 20.0724 16.5862L20.2474 15.5862C20.301 15.2802 20.0655 15 19.7549 15H16.35L16.6758 13.1558C16.7823 12.5529 16.3186 12 15.7063 12C15.2286 12 14.8199 12.3429 14.7368 12.8133L14.3504 15H8.35045L9.41045 9H13C13.5523 9 14 8.55228 14 8Z"></path><path fill="#72767d" d="M21.025 5V4C21.025 2.88 20.05 2 19 2C17.95 2 17 2.88 17 4V5C16.4477 5 16 5.44772 16 6V9C16 9.55228 16.4477 10 17 10H19H21C21.5523 10 22 9.55228 22 9V5.975C22 5.43652 21.5635 5 21.025 5ZM20 5H18V4C18 3.42857 18.4667 3 19 3C19.5333 3 20 3.42857 20 4V5Z"></path></svg>
-  <span class="title">DirtServer＃Pics✖︎(LifeStyle☻♨♥)</span>
+  <meta name="viewport" content="width=device-width, initial-scale=0.8" />
+  <div class="band">
+    <svg width="24" width="44" viewBox="0 0 24 24" class="icon-22AiRD">
+      <path fill="#72767d"
+        d="M14 8C14 7.44772 13.5523 7 13 7H9.76001L10.3657 3.58738C10.4201 3.28107 10.1845 3 9.87344 3H8.88907C8.64664 3 8.43914 3.17391 8.39677 3.41262L7.76001 7H4.18011C3.93722 7 3.72946 7.17456 3.68759 7.41381L3.51259 8.41381C3.45905 8.71977 3.69449 9 4.00511 9H7.41001L6.35001 15H2.77011C2.52722 15 2.31946 15.1746 2.27759 15.4138L2.10259 16.4138C2.04905 16.7198 2.28449 17 2.59511 17H6.00001L5.39427 20.4126C5.3399 20.7189 5.57547 21 5.88657 21H6.87094C7.11337 21 7.32088 20.8261 7.36325 20.5874L8.00001 17H14L13.3943 20.4126C13.3399 20.7189 13.5755 21 13.8866 21H14.8709C15.1134 21 15.3209 20.8261 15.3632 20.5874L16 17H19.5799C19.8228 17 20.0306 16.8254 20.0724 16.5862L20.2474 15.5862C20.301 15.2802 20.0655 15 19.7549 15H16.35L16.6758 13.1558C16.7823 12.5529 16.3186 12 15.7063 12C15.2286 12 14.8199 12.3429 14.7368 12.8133L14.3504 15H8.35045L9.41045 9H13C13.5523 9 14 8.55228 14 8Z">
+      </path>
+      <path fill="#72767d"
+        d="M21.025 5V4C21.025 2.88 20.05 2 19 2C17.95 2 17 2.88 17 4V5C16.4477 5 16 5.44772 16 6V9C16 9.55228 16.4477 10 17 10H19H21C21.5523 10 22 9.55228 22 9V5.975C22 5.43652 21.5635 5 21.025 5ZM20 5H18V4C18 3.42857 18.4667 3 19 3C19.5333 3 20 3.42857 20 4V5Z">
+      </path>
+    </svg>
+    <span class="title">DirtServer＃Pics✖︎(LifeStyle☻♨♥)</span>
   </div>
   <div class="all" id="style-1">
 
     <div class="hover-effect">
-        <div class="pfp">
-        <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
+
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">XX/XX/XX</span><br>
+        <div class="content">for older, check <a href="https://gabriel1.fr/staedtler.html">https://gabriel1.fr/staedtler.html</a>
         </div>
-
-        <div class="message">
-          <div class="message-sender">gabrieI</diV><span class="time">XX/XX/XX</span><br>
-            <div class="content">for older, check <a href="https://gabriel1.fr/staedtler.html">https://gabriel1.fr/staedtler.html</a>
-        </div>
+      </div>
     </div>
-    </div>
 
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">30/03/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/826243949005897738/unknown.png" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">30/03/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/826243949005897738/unknown.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">30/03/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/826553854895718440/DSC00080.JPG" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">30/03/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/826553854895718440/DSC00080.JPG" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">01/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/827284858576699413/image0.png" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">01/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/827284858576699413/image0.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">02/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/827641985576730654/image0.jpg" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">02/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/827641985576730654/image0.jpg" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">02/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/827648007612268574/image0.jpg" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">02/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/827648007612268574/image0.jpg" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">02/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/827843774528749598/isurhiugi.png" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">02/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/827843774528749598/isurhiugi.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">02/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/827648008086487092/image2.jpg" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">02/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/827648008086487092/image2.jpg" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">06/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/829047008986791936/shijeizto2222it.jpg" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">06/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/829047008986791936/shijeizto2222it.jpg" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">07/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/829115994097057873/majime.png" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">07/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/829115994097057873/majime.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">07/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/829468105675636736/RER.png" style="border-radius:3.625px;" height="240px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">07/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/829468105675636736/RER.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">10/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/830481383515619388/54679086754.png" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">10/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/830481383515619388/54679086754.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">15/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/832245245113663568/strike-raw-1618492595650.png" style="border-radius:3.625px; margin-bottom:7.5px;" height="300px;"><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/832245257264693268/unknown.png" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">15/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/832245245113663568/strike-raw-1618492595650.png" style="border-radius:3.625px; margin-bottom:7.5px;" width="350px;"><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/832245257264693268/unknown.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">15/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/832371875539451934/fluo.png" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">15/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/832371875539451934/fluo.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">16/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/832582688921354240/strike-export-1618573441992.png" style="border-radius:3.625px;" height="275px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">16/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/832582688921354240/strike-export-1618573441992.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">18/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/833109337491898428/image0.png" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">18/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/833109337491898428/image0.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">18/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/833378409782313070/image0.png" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">18/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/833378409782313070/image0.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">19/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/833812452759437333/tewi.png" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">19/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/833812452759437333/tewi.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">21/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/834226641441783868/unknown.png" style="border-radius:3.625px; margin-bottom:7.5px;" height="300px;"><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/834226784621821972/unknown.png" style="border-radius:3.625px; margin-bottom:7.5px;" height="200px;"><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/834226852482514974/strike-raw-1618965240729.png" style="border-radius:3.625px;" height="300px">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">21/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/834226641441783868/unknown.png" style="border-radius:3.625px; margin-bottom:7.5px;" width="350px;"><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/834226784621821972/unknown.png" style="border-radius:3.625px; margin-bottom:7.5px;" width="350px;"><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/834226852482514974/strike-raw-1618965240729.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">21/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/834535866285948958/strike-raw-1619018627899.png" style="border-radius:3.625px; margin-bottom:7.5px;" height="225px"><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/834535935135055932/strike-raw-1619039214848.png" style="border-radius:3.625px;" height="175px">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">21/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/834535866285948958/strike-raw-1619018627899.png" style="border-radius:3.625px; margin-bottom:7.5px;" width="350px;"><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/834535935135055932/strike-raw-1619039214848.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">27/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/836928183449813013/image0.jpg" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">27/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/836928183449813013/image0.jpg" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">29/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/837106172661989416/374386857.png" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">29/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/837106172661989416/374386857.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">29/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/670373538053750815/857313732661215252/unknown.png" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">29/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/670373538053750815/857313732661215252/unknown.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">30/04/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/837475112202010664/blagiree.png" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">30/04/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/837475112202010664/blagiree.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">03/05/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/838866578006212648/3567.png" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">03/05/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/838866578006212648/3567.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">08/05/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/842475964616933376/unknown.png" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">08/05/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/842475964616933376/unknown.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">13/05/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/842476072854355968/image0.jpg" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">13/05/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/842476072854355968/image0.jpg" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">19/05/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/844608619143626772/image0.jpg" style="border-radius:3.625px;" height="250px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">19/05/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/844608619143626772/image0.jpg" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">19/05/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/844628476741025812/image0.jpg" style="border-radius:3.625px;" height="350px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">19/05/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/844628476741025812/image0.jpg" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">26/05/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/847162760676900954/strike-raw-1622049703004.png" style="border-radius:3.625px;" height="350px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">26/05/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/847162760676900954/strike-raw-1622049703004.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">06/06/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/851119212218155008/1395817.png" style="border-radius:3.625px;" height="350px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">06/06/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/851119212218155008/1395817.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">07/06/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/851503748550885376/image0.jpg" style="border-radius:3.625px;" height="350px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">07/06/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/851503748550885376/image0.jpg" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">13/06/21</span><br>
-        <img src="https://cdn.discordapp.com/attachments/826243935726075935/853691942055706634/image0.jpg" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">13/06/21</span><br>
+        <img src="https://cdn.discordapp.com/attachments/826243935726075935/853691942055706634/image0.jpg" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">17/06/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/854873264030351392/strike-raw-1623888045551.png" style="border-radius:3.625px;" height="275px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">17/06/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/854873264030351392/strike-raw-1623888045551.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">22/06/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/856937333454012416/7274.png" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">22/06/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/856937333454012416/7274.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">23/06/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/857311158133719040/9896.jpg" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">23/06/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/857311158133719040/9896.jpg" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">25/06/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/857783551684378654/2848.png" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">25/06/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/857783551684378654/2848.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">30/06/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/859876105619505172/l4067.jpg" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">30/06/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/859876105619505172/l4067.jpg" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">16/07/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/865664446554963998/S4657879.png" style="border-radius:3.625px;" height="300px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">16/07/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/865664446554963998/S4657879.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">20/07/21</span><br>
-        <video src="https://cdn.discordapp.com/attachments/826243935726075935/867142728641675324/video0.mov" style="border-radius:3.625px;" height="200px;" controls></video>
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">20/07/21</span><br>
+        <video src="https://cdn.discordapp.com/attachments/826243935726075935/867142728641675324/video0.mov" style="border-radius:3.625px;" width="350px;" controls></video>
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">24/07/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/868528018769985606/image0.png" style="border-radius:3.625px;" height="350px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">24/07/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/868528018769985606/image0.png" style="border-radius:3.625px;" width="300px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">02/08/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/871757296668135454/pixivSketch_12.png" style="border-radius:3.625px;" height="350px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">02/08/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/871757296668135454/pixivSketch_12.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">07/08/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/873324659863609354/240280648602684.png" style="border-radius:3.625px;" height="350px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">07/08/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/873324659863609354/240280648602684.png" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
-    </div>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">17/09/21</span><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/888391161285328956/image0.jpg" style="border-radius:3.625px;" height="450px;"><br><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/888391347239800842/image0.jpg" style="border-radius:3.625px;" height="350px;">
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">17/09/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/888391161285328956/image0.jpg" style="border-radius:3.625px;" width="350px;"><br><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/888391347239800842/image0.jpg" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
-<div class="hover-effect">
-    <div class="pfp">
-    <img src="https://cdn.discordapp.com/avatars/403191617563000832/5ef852c2005ec7e8ab30e0e028b301f5.png?size=256" style="border-radius:40px;" height="40px;">
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
+
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">17/09/21</span><br><a style="margin-bottom:2.5em;" href="https://soundcloud.com/enaturalist/okay-way">text source</a><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/888391406534660106/image0.jpg" style="border-radius:3.625px;margin-top:2.5px;" width="350px;"><br>
+      </div>
     </div>
 
-    <div class="message">
-      <div class="message-sender">gabrieI</diV><span class="time">17/09/21</span><br><a href="https://soundcloud.com/enaturalist/okay-way">text source</a><br>
-        <img src="https://media.discordapp.net/attachments/826243935726075935/888391406534660106/image0.jpg" style="border-radius:3.625px;" height="350px;"><br>
+    <div class="hover-effect">
+      <div class="pfp">
+        <img src="https://cdn.discordapp.com/avatars/403191617563000832/a64c789417fd7120be650d8a8980a54e.png?size=256" style="border-radius:40px;" width="40px;">
+      </div>
+
+      <div class="message">
+        <div class="message-sender">gabrieI</diV><span class="time">22/09/21</span><br>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/890308683022598194/image0.jpg" style="border-radius:3.625px;" width="350px;"><br><BR>
+        <img src="https://media.discordapp.net/attachments/826243935726075935/890308683379134484/image1.jpg" style="border-radius:3.625px;" width="350px;">
+      </div>
     </div>
-</div>
 
 
 
@@ -665,6 +690,6 @@
 
 
 
-<div id="bottom"></div>
-    </div>
+    <div id="bottom"></div>
+  </div>
 </body>
