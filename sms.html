@@ -1,62 +1,42 @@
 <head>
 <title>sms</title>
-<link rel="icon" type="image/svg" href="gabriel11.svg">
+<meta name="viewport" content="width=device-width, initial-scale=0.8,"/>
 <style>
-  @font-face {
-    font-family: 'SuisseIntl';
-    font-weight: normal;
-    src: url('SuisseIntl-Book-WebM.woff') format('woff');
+  body{
+    text-align: center;
+    padding: 5%;
+    display: flex;
   }
-body{
-  font-family: "SuisseIntl";
-  font-size: 2em;
-  line-height: 10px;
-  padding: 10;
-}
 a{
-  text-decoration: none;
   color: black;
+  text-decoration: none;
+  letter-spacing: -5;
+  font-size: 50px;
+  font-family: helvetica;
+  font-weight: bold;
 }
 a:hover{
-  color: #E6E6E6;
-}
-h1{
-  font-size: 0.5em;
-}
-.phone{
-  display: none;
-}
-.desktop{
-  display: inline;
-}
-.square{
-  width: 100%;
-  background-color: #bfbfbf;
-  padding: 10;
-  border-radius: 10px;
+  color: grey;
 
 }
-@media (max-device-width: 900px){
-  .desktop{
-    display: none;
-  }
-  .phone{
-    display: contents;
-  }
+.little{
+  font-weight: normal;
+  font-size: 12.5px;
+  letter-spacing: 0;
+  line-height:1px;
 }
+.box{
+  border: 1px solid;
+  width: 200px;
+  height: 75px;}
 </style>
   </head>
 <body>
-  <div class="phone">
+
+
+      <div class="box">
     <a href="sms://+330766135677">
-      <div class="square">call me maybe?
-    <h1>
-      (standard text message rates to france apply)
-    </h1>
-  </div>
-</a>
-  </div>
-  <div class="desktop">
-    <h1><font style="color:white;background-color:black;">please use a phone for this page</font></h1>
-  </div>
+      Text Now<br><span class="little">(standard rates to france apply)</span></a>    </div>
+
+
 </body>
